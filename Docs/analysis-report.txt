@@ -1,0 +1,38 @@
+Bagian A: Sintaks dan Penamaan
+1. **Analisis Error**: Dari file SyntaxChecker.java yang Anda perbaiki, sebutkan 3 error yang Anda temukan dan tunjukkan bagaimana Anda memperbaikinya dengan menampilkan kode sebelum dan sesudah perbaikan.
+Answer: 3 error yang ditemukan :
+        1. variabel 2number
+        2. variabel class
+        3. variabel first name
+
+2. **Naming Convention**: Dari program NamingConvention.java yang Anda buat, berikan contoh 3 nama variabel yang Anda gunakan dan jelaskan mengapa penamaan tersebut mengikuti aturan camelCase dengan baik.
+Answer: Mengapa variabel berikut disebut camelCase, karena ada huruf besar di tengah penamaan variabel
+        1. namaLengkap
+        2. nomorInduk
+        3. ipkMahasiswa
+
+3. **Class Naming**: Bandingkan nama class pada file yang error (`syntaxchecker`) dengan nama class yang benar (`SyntaxChecker`). Apa yang terjadi saat Anda compile dengan nama class yang salah?
+Answer: error yang menjelaskan bahwa class yang di gunakan adalah salah
+
+Bagian B. Tipe Data dan Casting
+1. Pemilihan Tipe Data: Dalam program SimpleCalculator yang Anda buat, bandingkan hasil perhitungan pembagian menggunakan double vs int. Berikan contoh konkret dengan angka yang Anda input dan jelaskan perbedaan hasilnya.
+Answer: terjadi perbedaan hasil untuk double dimana ada hasil desimalnya dan untuk intiger desimalnya hilang atau data loss
+
+2. Data Loss Experiment: Dari program TypeCastingExperiment yang Anda jalankan, nilai mana yang mengalami data loss paling signifikan? Tunjukkan dengan contoh output yang Anda dapatkan.
+Answer: double 123.789 menjadi int 123 desimal dan angka dibelakangnya hilang menjadi Data loss
+
+3. Overflow Analysis: Saat menjalankan DataTypeLimits, coba input nilai 300 untuk tipe byte. Catat hasil yang muncul dan jelaskan mengapa hasilnya seperti itu berdasarkan eksperimen Anda.
+Answer: 44 hasilnya
+
+4. Practical Impact: Dari semua program yang Anda buat, di program mana konversi tipe data paling berisiko menyebabkan kesalahan? Berikan contoh spesifik dari kode Anda.
+Answer: Unit Converter dan Type Casting,
+
+Bagian C: Input/Output
+1. Scanner Implementation: Dari program BiodataMahasiswa yang Anda buat, method Scanner mana saja yang Anda gunakan? Jelaskan mengapa Anda memilih method tersebut untuk setiap jenis input.
+Answer: menggunakan scanner.nextInt(); dan scanner.nextLine();
+        nextInt untuk integer dan nextLine untuk String
+
+2. Input Validation: Saat menjalankan program GradeCalculator, apa yang terjadi jika Anda memasukkan nilai di luar rentang 0-100? Bagaimana program Anda menangani situasi ini?
+Answer: Akan terjadi error, karena nilai hanya rentang 0-100, di luar itu error
+        tentu saya memberi peringatan "coba lagi!" dengan else if, jika nilai di luar 0-100
+
